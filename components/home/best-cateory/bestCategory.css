@@ -1,0 +1,10 @@
+.card1,
+.card2,
+.card3 {
+  background-image: url("../../../public/images/shop1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 430px;
+  height: 534px;
+}
