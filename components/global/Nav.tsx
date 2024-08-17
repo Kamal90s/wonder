@@ -10,6 +10,7 @@ import { useState } from "react";
 import CategoryDropDown from "./CategoryDropDown";
 import { IoClose } from "react-icons/io5";
 import { MdMenu } from "react-icons/md";
+import useOnclickOutside from "react-cool-onclickoutside";
 
 const Nav = () => {
   const links = [
@@ -22,6 +23,14 @@ const Nav = () => {
   const [openCategoryMenu, setOpenCategoryMenu] = useState(true);
   const [openNav, setOpenNav] = useState(false);
   const [display, setDisplay] = useState(false);
+
+  const ref = useOnclickOutside(() => {
+    setOpenNav(false);
+  });
+
+  const handleClickBtn = () => {
+    setOpenNav(!openNav);
+  };
 
   const handleOpenHelps = () => {
     setOpenHelpMenu(true);
@@ -49,7 +58,7 @@ const Nav = () => {
               <FiShoppingCart />
             </div>
             <h2
-              className={` text-[20px] logo font-medium absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]`}
+              className={` text-[20px] logo font-semibold absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]`}
             >
               WONDER
             </h2>
@@ -65,6 +74,7 @@ const Nav = () => {
               />
             )}
             <div
+              ref={ref}
               style={{
                 clipPath: openNav
                   ? "polygon(100% 0, 0 0, 0 100%, 100% 100%)"
