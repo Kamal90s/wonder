@@ -1,5 +1,4 @@
 import Banner from "@/components/home/Banner";
-import BestCategory from "@/components/home/best-cateory/BestCategory";
 import BestSeller from "@/components/home/bestSection/BestSeller";
 import Clients from "@/components/home/clients/Clients";
 import OurMission from "@/components/home/our-mission/OurMission";
@@ -11,7 +10,6 @@ export default function Home() {
     <div>
       <Banner />
       <BestSeller />
-      {/* <BestCategory/> */}
       <OurMission />
       <Review />
       <Clients />
