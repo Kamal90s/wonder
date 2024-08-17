@@ -19,7 +19,7 @@ const Nav = () => {
     { index: 0, title: "مساعدة" },
   ];
   const [openHelpMenu, setOpenHelpMenu] = useState(false);
-  const [openCategoryMenu, setOpenCategoryMenu] = useState(false);
+  const [openCategoryMenu, setOpenCategoryMenu] = useState(true);
   const [openNav, setOpenNav] = useState(false);
   const [display, setDisplay] = useState(false);
 

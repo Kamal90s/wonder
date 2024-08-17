@@ -101,7 +101,7 @@ const BestSeller = () => {
         modules={[Pagination]}
       >
         {data.map((ele) => (
-          <SwiperSlide className="flex flex-col relative">
+          <SwiperSlide key={ele.title} className="flex flex-col relative">
             <small className="bg-white px-4 py-2 absolute bottom-14 h-fit lg:top-2 right-2">
               جديد!
             </small>

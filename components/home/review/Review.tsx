@@ -3,7 +3,7 @@ import image from "../../../public/images/012.jpg";
 import "./review.css";
 const Review = () => {
   return (
-    <div className="review flex flex-col gap-5 md:gap-0 md:flex-row items-center md:mb-0 overflow-hidden pb-14 border-b border-gray-400">
+    <div className="review flex flex-col gap-5 md:gap-0 md:flex-row items-center md:mb-0 overflow-hidden pb-14  lg:border-b border-gray-400">
       {/* <Image src={image} className="" alt="" /> */}
       <div className="image"></div>
       <div className=" md:w-[50%] py-14 md:py-0 px-8 md:px-11 ">

@@ -42,7 +42,7 @@ const Clients = () => {
         modules={[Autoplay, Pagination]}
       >
         {data.map((ele) => (
-          <SwiperSlide className="flex flex-col">
+          <SwiperSlide key={ele.height} className="flex flex-col">
             <div>
               <Image width={100} height={100} src={ele} alt="" />
             </div>{" "}
