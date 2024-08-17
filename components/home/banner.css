@@ -35,14 +35,11 @@
 
   height: 555px;
   }
-  .banner div{
-    /* width: 300PX; */
-  }
   .banner-button {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  bottom: -190px;
+  bottom: -180px;
   background-color: white;
   border: 1px solid black;
   width: 350px;
@@ -50,6 +47,18 @@
 
   }
 }
+@media (max-width:400px) {
+
+  .banner-button {
+ 
+  bottom: -155px;
+  width: 290px;
+
+
+
+  }
+}
+
 
 .test{
   position: absolute;
