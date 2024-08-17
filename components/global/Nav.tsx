@@ -49,7 +49,7 @@ const Nav = () => {
               <FiShoppingCart />
             </div>
             <h2
-              className={` text-[20px] logo absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]`}
+              className={` text-[20px] logo font-medium absolute top-[50%] translate-y-[-50%] right-[50%] translate-x-[50%]`}
             >
               WONDER
             </h2>
@@ -60,7 +60,7 @@ const Nav = () => {
               />
             ) : (
               <MdMenu
-                className="lg:hidden absolute top-[50%] translate-y-[-50%] left-0"
+                className="lg:hidden absolute top-[50%] translate-y-[-50%] left-0 text-[20px]"
                 onClick={() => setOpenNav(true)}
               />
             )}

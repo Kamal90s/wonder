@@ -47,12 +47,35 @@
 
   }
 }
-@media (max-width:400px) {
+@media (max-width:500px) {
 
   .banner-button {
  
-  bottom: -155px;
+  bottom: -115px;
   width: 290px;
+
+
+
+  }
+
+ 
+}
+@media (min-width:395px) {
+
+  .banner div {
+ 
+  top: 60%;
+
+
+
+  }
+}
+
+@media (min-width:500px) {
+
+  .banner div {
+ 
+  top: 50%;
 
 
 
